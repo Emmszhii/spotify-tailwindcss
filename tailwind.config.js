@@ -12,6 +12,7 @@ module.exports = {
         lgreen: "#C5F0C9",
         ldark: "#191414",
         lgray: "#918D74",
+        dgray: "#222326",
       },
     },
   },

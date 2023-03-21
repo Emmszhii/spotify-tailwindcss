@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 .container {
+  @apply max-w-[90rem] mx-auto p-[1.5rem] w-full;
+}
+.container2 {
   @apply max-w-[140rem] mx-auto p-[1.5rem] w-full;
 }
 
@@ -75,5 +78,61 @@
   }
   .footer__links a {
     @apply hover:text-green-500;
+  }
+}
+
+@layer components {
+  .developers__nav.open {
+    @apply max-h-[40rem] ease-in-out duration-[700ms];
+  }
+  .developers__nav.open ul {
+    @apply block max-h-[40rem] ease-in-out duration-[700ms];
+  }
+  .developers__nav ul li {
+    @apply px-10 py-5 cursor-pointer border-t-[1px] border-gray-500 hover:text-green-500 lg:px-2 lg:py-5 lg:border-0;
+  }
+  .developers__menu span {
+    @apply block w-[2rem] h-1 bg-dlight m-1 ease-in-out duration-300;
+  }
+  .developers__menu.open span:first-child {
+    @apply translate-y-[8px] rotate-[40deg];
+  }
+  .developers__menu.open span:nth-child(2) {
+    @apply opacity-0;
+  }
+  .developers__menu.open span:last-child {
+    @apply translate-y-[-8px] rotate-[-40deg];
+  }
+  .dev__comm:hover .dev__comm__hover,
+  .dev__use:hover .dev__use__hover,
+  .dev__docs:hover .dev__docs__hover {
+    @apply text-dlight lg:block lg:top-[4rem] lg:ease-in-out lg:duration-300;
+  }
+  .dev__use ul li {
+    @apply lg:py-1 px-0 text-[.9rem];
+  }
+  .dev__docs h4 {
+    @apply lg:max-w-[9rem];
+  }
+  .dev__docs ul li {
+    @apply lg:py-1 px-0 text-[.9rem] lg:max-w-[5rem];
+  }
+  .dev__comm__hover ul {
+    @apply font-bold;
+  }
+  .devBanner.open {
+    @apply pt-[25rem] lg:pt-0 ease-in-out duration-300;
+  }
+  .feature__item {
+    @apply py-5 max-w-[40rem];
+  }
+  .feature__item h4 {
+    @apply font-bold text-[2rem] lg:text-[2.7rem];
+  }
+  .feature__item ul {
+    @apply flex gap-6 py-4  items-end;
+  }
+  .feature__item ul li a {
+    @apply flex flex-col gap-1 items-center;
   }
 }

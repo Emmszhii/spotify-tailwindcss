@@ -2,6 +2,9 @@ const headerNav = document.querySelector(".header__nav");
 const toggleMenu = document.querySelector(".toggle__menu");
 const overlayBg = document.querySelector(".bg__overlay");
 const linksItems = document.querySelectorAll(".link__items h3");
+const devNav = document.querySelector(".developers__nav");
+const devMenu = document.querySelector(".developers__menu");
+const devBanner = document.querySelector(".devBanner");
 
 linksItems.forEach((link) => {
   link.addEventListener("click", () => {
@@ -16,4 +19,11 @@ const onClickToggleMenu = () => {
   overlayBg.classList.toggle("open");
 };
 
-toggleMenu.addEventListener("click", onClickToggleMenu);
+const onClickDevelopersMenu = () => {
+  devNav.classList.toggle("open");
+  devMenu.classList.toggle("open");
+  devBanner.classList.toggle("open");
+};
+
+if (toggleMenu) toggleMenu.addEventListener("click", onClickToggleMenu);
+if (devMenu) devMenu.addEventListener("click", onClickDevelopersMenu);
