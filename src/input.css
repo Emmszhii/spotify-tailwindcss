@@ -83,10 +83,10 @@
 
 @layer components {
   .developers__nav.open {
-    @apply max-h-[40rem] ease-in-out duration-[700ms];
+    @apply max-h-[40rem] ease-in-out duration-[300ms];
   }
   .developers__nav.open ul {
-    @apply block max-h-[40rem] ease-in-out duration-[700ms];
+    @apply block max-h-[40rem];
   }
   .developers__nav ul li {
     @apply px-10 py-5 cursor-pointer border-t-[1px] border-gray-500 hover:text-green-500 lg:px-2 lg:py-5 lg:border-0;
@@ -106,7 +106,7 @@
   .dev__comm:hover .dev__comm__hover,
   .dev__use:hover .dev__use__hover,
   .dev__docs:hover .dev__docs__hover {
-    @apply text-dlight lg:block lg:top-[4rem] lg:ease-in-out lg:duration-300;
+    @apply text-dlight lg:block lg:top-[4rem] max-h-[40rem];
   }
   .dev__use ul li {
     @apply lg:py-1 px-0 text-[.9rem];

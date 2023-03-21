@@ -729,15 +729,13 @@ video {
 
 .developers__nav.open {
   max-height: 40rem;
-  transition-duration: 700ms;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .developers__nav.open ul {
   display: block;
   max-height: 40rem;
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .developers__nav ul li {
@@ -796,6 +794,7 @@ video {
 .dev__comm:hover .dev__comm__hover,
   .dev__use:hover .dev__use__hover,
   .dev__docs:hover .dev__docs__hover {
+  max-height: 40rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -806,8 +805,6 @@ video {
   .dev__docs:hover .dev__docs__hover {
     top: 4rem;
     display: block;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1450,11 +1447,11 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
 
-.duration-300 {
+.duration-\[300ms\] {
   transition-duration: 300ms;
 }
 
@@ -1604,9 +1601,8 @@ video {
     position: static;
   }
 
-  .lg\:mx-\[20rem\] {
-    margin-left: 20rem;
-    margin-right: 20rem;
+  .lg\:top-\[4rem\] {
+    top: 4rem;
   }
 
   .lg\:mx-auto {
