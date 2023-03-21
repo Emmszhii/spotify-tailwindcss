@@ -859,7 +859,7 @@ video {
 }
 
 .feature__item {
-  max-width: 40rem;
+  max-width: 35rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -881,6 +881,13 @@ video {
   gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .feature__item ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .feature__item ul li a {

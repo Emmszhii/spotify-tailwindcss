@@ -124,13 +124,13 @@
     @apply pt-[25rem] lg:pt-0 ease-in-out duration-300;
   }
   .feature__item {
-    @apply py-5 max-w-[40rem];
+    @apply py-5 max-w-[35rem];
   }
   .feature__item h4 {
     @apply font-bold text-[2rem] lg:text-[2.7rem];
   }
   .feature__item ul {
-    @apply flex gap-6 py-4  items-end;
+    @apply flex gap-6 py-4 items-end lg:py-8;
   }
   .feature__item ul li a {
     @apply flex flex-col gap-1 items-center;
